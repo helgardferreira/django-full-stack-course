@@ -1,14 +1,20 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>First App</title>
+
+    <link rel="stylesheet" href="{% static 'css/bananas.css' %}" />
   </head>
   <body>
-    <h1>Welcome to My First App</h1>
-
-    <h2>{{ insert_me }}</h2>
+    <h1>Hi, this is a picture of some bananas</h1>
+    <img
+      class="bananas"
+      src="{% static 'images/bananas.jpg' %}"
+      alt="Some bananas"
+    />
   </body>
 </html>

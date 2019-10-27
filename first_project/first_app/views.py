@@ -5,4 +5,5 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("<strong>My First App!</strong>")
+    template_vars = {'insert_me': 'Hello I am from first_app/views.py!'}
+    return render(request, 'first_app/index.html', context=template_vars)

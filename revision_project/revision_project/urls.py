@@ -20,11 +20,11 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request, "index.html")
 
 
 urlpatterns = [
-    path('', index, name="index"),
-    path('revision_app/', include('revision_app.urls'), name="revision_app"),
-    path('admin/', admin.site.urls),
+    path("", index, name="index"),
+    path("revision_app/", include("revision_app.urls"), name="revision_app"),
+    path("admin/", admin.site.urls),
 ]

@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class RevisionAppConfig(AppConfig):
-    name = 'revision_app'
+    name = "revision_app"

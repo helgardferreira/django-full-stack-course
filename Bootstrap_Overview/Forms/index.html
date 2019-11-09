@@ -1,122 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Bootstrap Forms</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bootstrap Forms</title>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous"
+        />
+    </head>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <body>
+        <div class="container">
+            <fieldset class="form-group">
+                <legend>Example Form</legend>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail">Email address</label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            name="exampleInputEmail"
+                            id="exampleInputEmail"
+                        />
+                        <small id="emailHelp" class="form-text text-muted"
+                            >We'll never share your email with anyone
+                            else.</small
+                        >
+                    </div>
 
-</head>
+                    <div class="form-group">
+                        <label for="example-select">Example select</label>
+                        <select
+                            name="example-select"
+                            id="example-select"
+                            class="form-control"
+                        >
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
 
-<body>
+                    <div class="form-group">
+                        <label for="example-multiline-select"
+                            >Example multiline select</label
+                        >
+                        <select
+                            multiple
+                            name="example-multiline-select"
+                            id="example-multiline-select"
+                            class="form-control"
+                        >
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
 
-  <div class="container">
-    <fieldset class="form-group">
-      <legend>Example Form</legend>
-      <form>
+                    <div class="form-group">
+                        <label for="example-text-area">Example textarea</label>
+                        <textarea
+                            class="form-control"
+                            name="example-text-area"
+                            id="example-text-area"
+                            cols="30"
+                            rows="10"
+                        ></textarea>
+                    </div>
 
-        <div class="form-group">
-          <label for="exampleInputEmail">Email address</label>
-          <input type="email" class="form-control" name="exampleInputEmail" id="exampleInputEmail">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    <div class="form-group">
+                        <label for="example-input-file">File input</label>
+                        <input
+                            type="file"
+                            name="example-input-file"
+                            id="example-input-file"
+                            class="form-control-file"
+                        />
+                        <small id="file-help" class="form-text text-muted"
+                            >Upload your files using the above widget.</small
+                        >
+                    </div>
+
+                    <fieldset class="form-group">
+                        <legend>Radio Buttons</legend>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input
+                                    type="radio"
+                                    class="form-check-input"
+                                    name="example-radio-buttons"
+                                    id="example-radio-button1"
+                                />
+                                Option one is this and that - be sure to include
+                                why it's great
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input
+                                    type="radio"
+                                    class="form-check-input"
+                                    name="example-radio-buttons"
+                                    id="example-radio-button2"
+                                />
+                                Option two can be something else and selecting
+                                it will deselect option one
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input
+                                    type="radio"
+                                    class="form-check-input"
+                                    name="example-radio-buttons"
+                                    id="example-radio-button3"
+                                    disabled
+                                />
+                                Option three is disabled
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <legend>Checkbox Buttons</legend>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input
+                                    type="checkbox"
+                                    class="form-check-input"
+                                    name="example-checkbox"
+                                    id="example-checkbox"
+                                />
+                                Check me out
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input
+                                    type="checkbox"
+                                    class="form-check-input"
+                                    name="example-checkbox"
+                                    id="example-checkbox"
+                                />
+                                Please, also check me out!
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input
+                                    type="checkbox"
+                                    class="form-check-input"
+                                    name="example-checkbox"
+                                    id="example-checkbox"
+                                    disabled
+                                />
+                                Please, don't check me out!
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                        id="form-submit"
+                    >
+                        Submit
+                    </button>
+                </form>
+            </fieldset>
         </div>
-
-        <div class="form-group">
-
-          <label for="example-select">Example select</label>
-          <select name="example-select" id="example-select" class="form-control">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-
-          <label for="example-multiline-select">Example multiline select</label>
-          <select multiple name="example-multiline-select" id="example-multiline-select" class="form-control">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="example-text-area">Example textarea</label>
-          <textarea class="form-control" name="example-text-area" id="example-text-area" cols="30" rows="10"></textarea>
-        </div>
-
-        <div class="form-group">
-          <label for="example-input-file">File input</label>
-          <input type="file" name="example-input-file" id="example-input-file" class="form-control-file">
-          <small id="file-help" class="form-text text-muted">Upload your files using the above widget.</small>
-        </div>
-
-        <fieldset class="form-group">
-          <legend>Radio Buttons</legend>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="example-radio-buttons" id="example-radio-button1">
-              Option one is this and that - be sure to include why it's great
-            </label>
-          </div>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="example-radio-buttons" id="example-radio-button2">
-              Option two can be something else and selecting it will deselect option one
-            </label>
-          </div>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="example-radio-buttons" id="example-radio-button3"
-                disabled>
-              Option three is disabled
-            </label>
-          </div>
-        </fieldset>
-
-        <fieldset class="form-group">
-          <legend>Checkbox Buttons</legend>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" name="example-checkbox" id="example-checkbox">
-              Check me out
-            </label>
-          </div>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" name="example-checkbox" id="example-checkbox">
-              Please, also check me out!
-            </label>
-          </div>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" name="example-checkbox" id="example-checkbox" disabled>
-              Please, don't check me out!
-            </label>
-          </div>
-
-        </fieldset>
-
-        <button type="submit" class="btn btn-primary" id="form-submit">Submit</button>
-
-      </form>
-    </fieldset>
-
-  </div>
-
-</body>
-<script>
-  document.getElementById('form-submit').addEventListener('click', e => {
-    e.preventDefault();
-    console.log(e);
-  });
-</script>
-
+    </body>
+    <script>
+        document.getElementById("form-submit").addEventListener("click", e => {
+            e.preventDefault();
+            console.log(e);
+        });
+    </script>
 </html>
